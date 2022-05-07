@@ -5,10 +5,10 @@ const useProducts =()=>{
     const [loading, setLoading] = useState(false)
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/invenory`)
+        fetch(`http://localhost:5000/inventory`)
         .then(res => res.json())
         .then(data => setProducts(data))
-         setLoading(false)
+         setLoading(!loading)
     },[products])
 
     return [products, setProducts]

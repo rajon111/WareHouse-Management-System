@@ -2,10 +2,8 @@ import { useEffect, useState } from "react";
 import { Button, Card, Form, Container} from "react-bootstrap";
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword, useSignInWithGithub, useSignInWithGoogle } from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { toast, ToastContainer } from "react-toastify";
+import { toast} from "react-toastify";
 import auth from "../../../firebase.init";
-// import googlelogo from '../../../images/social/google.png'
-// import github from '../../../images/social/github.png'
 import './Login.css'
 
 const Login = () => {
@@ -104,7 +102,6 @@ const Login = () => {
 
   return (
     <div className="form-container">
-      {/* style={{backgroundImage:url('')}} */}
       <Container
         className="d-flex align-items-center justify-content-center"
         style={{ minHeight: "100vh" }}
@@ -125,11 +122,10 @@ const Login = () => {
                   <Form.Label>Password</Form.Label>
                   <Form.Control type="password" placeholder="Enter your password" onChange={handlePasswordChange} required />
                 </Form.Group>
-                <Button className="w-100 mt-3" type="submit">
+                <Button className="w-100 mt-3 bg-primary" type="submit">
                   Log In
                 </Button>
               </Form>
-              <ToastContainer />
             </Card.Body>
           </Card>
           <div className="w-100 text-center mt-2">
@@ -149,13 +145,11 @@ const Login = () => {
 
           <div>
             <button className="btn btn-primary w-75 d-block mx-auto" onClick={() => signInWithGoogle()}>
-              {/* <img style={{width:'30px'}} src={googlelogo} alt="" /> */}
               <span className="px-4">Google</span>
             </button>
           </div>
           <div className='mt-2'>
             <button className="btn btn-primary w-75 d-block mx-auto" onClick={() => signInWithGithub()}>
-              {/* <img style={{width:'30px'}} src={github} alt="" /> */}
               <span className="px-4">Github</span>
             </button>
         </div>
