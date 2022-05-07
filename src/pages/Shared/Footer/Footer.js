@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     const year = new Date().getFullYear()
@@ -13,30 +14,14 @@ const Footer = () => {
                                 <h2 className='footer-sce-title'>Company</h2>
                                 <ul>
                                     <li>
-                                        <a href="#">about</a>
+                                        <a href="#">About Us</a>
+                                
                                     </li>
                                     <li>
-                                        <a href="#">about</a>
+                                        <a href="#">Contact Us</a>
                                     </li>
                                     <li>
-                                        <a href="#">about</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">about</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="col-6 col-lg-3">
-                                <h2>Support</h2>
-                                <ul>
-                                    <li>
-                                        <a href="#">about</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">about</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">about</a>
+                                        <a href="#">Intellectual Property</a>
                                     </li>
                                     <li>
                                         <a href="#">about</a>
@@ -44,19 +29,36 @@ const Footer = () => {
                                 </ul>
                             </div>
                             <div className="col-6 col-lg-3">
-                                <h2>Services</h2>
+                                <h2>Information</h2>
                                 <ul>
                                     <li>
-                                        <a href="#">about</a>
+                                        <a href="#">Exchange & Return</a>
                                     </li>
                                     <li>
-                                        <a href="#">about</a>
+                                        <a href="#">Size Guide</a>
                                     </li>
                                     <li>
-                                        <a href="#" className='text-white'>about</a>
+                                        <a href="#">Loyalty Program</a>
                                     </li>
                                     <li>
-                                        <a href="#">about</a>
+                                        <a href="#">Display Centers</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="col-6 col-lg-3">
+                                <h2>Legal</h2>
+                                <ul>
+                                    <li>
+                                        <a href="#">Privacy Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Payment Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" className='text-white'>Shipping Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Terms & Conditions</a>
                                     </li>
                                 </ul>
                             </div>

@@ -1,0 +1,75 @@
+[
+    {
+      "index": 0,
+      "name": "Fitz Air-1",
+      "picture": "https://i.ibb.co/ZdZJwJC/young-man-runner-tying-shoelaces.jpg",
+      "description": "Breathable upper for optimum comfort and fit.Lightweight sole to stirde with ease.",
+      "price": "700",
+      "quantity": "7",
+      "supplier": "techno ltd"
+    },
+    {
+      "index": 1,
+      "name": "Fitz Basketball kit",
+      "picture": "https://i.ibb.co/BC1bjT4/young-basketball-player-team-wearing-sportwear-training-practicing-action-motion-run-isolated-white.jpg",
+      "description": "The KIT Collection is an infusion of traditional elements with contemporary design.",
+      "price": "",
+      "quantity": "15",
+      "supplier": "techno ltd"
+    },
+    {
+      "index": 2,
+      "name": "Fitz Basketball kit",
+      "picture": "https://i.ibb.co/BC1bjT4/young-basketball-player-team-wearing-sportwear-training-practicing-action-motion-run-isolated-white.jpg",
+      "description": "The KIT Collection is an infusion of traditional elements with contemporary design.",
+      "price": "900",
+      "quantity": "15",
+      "supplier": "techno ltd"
+    },
+    {
+      "index": 3,
+      "name": "Fitz Basketball kit",
+      "picture": "https://i.ibb.co/mHgVS1N/one-woman-playing-tennis-different-positions-isolated-black-wall-mixed-stobe-light.jpg",
+      "description": "The KIT Collection is an infusion of traditional elements with contemporary design.",
+      "price": "2000",
+      "quantity": "15",
+      "supplier": "techno ltd"
+    },
+    {
+      "index": 4,
+      "name": "Blitz Surfing Board",
+      "picture": "https://i.ibb.co/1RK0JWD/courageous-surfer-riding-wave.jpg",
+      "description": " Stand Up Paddle Board Rope Leg Leash Light Weighted Surfboard Foot Rope Surfing Protect Accessories.",
+      "price": "1500",
+      "quantity": "24",
+      "supplier": "SafeSurf ltd"
+    },
+    {
+      "index": 5,
+      "name": "Blitz Surfing Board",
+      "picture": "https://i.ibb.co/jbq2yRs/A32.jpg",
+      "description": "Perfection in 12 Colors and 9 Sizes | GSM 160+ | Classic T-shirt | Ribbed collar | Oeko-tex Certified",
+      "price": "600",
+      "quantity": "38",
+      "supplier": "techno ltd"
+    },
+    {
+      "index": 6,
+      "name": "Brazil Jearsey",
+      "picture": "https://i.ibb.co/m8ZM6tP/brazil.jpg",
+      "description": "These comfortable jersey shorts are made with a soft handle brushback fabric for extra comfort. With a drawcord waist for the perfect fit.",
+      "price": "1200",
+      "quantity": "48",
+      "supplier": "Butex ltd"
+    },
+    {
+      "index": 7,
+      "name": "White sweatshirt with a hood",
+      "picture": "https://i.ibb.co/C0HZvZG/white-comfort.jpg",
+      "description": "A hoodie is a sweatshirt with a hood. Hoodies often include a muff sewn onto the lower front, and (usually) a drawstring to adjust the hood opening.",
+      "price": "1200",
+      "quantity": "48",
+      "supplier": "Butex ltd"
+    }
+    
+]
