@@ -5,6 +5,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../../firebase.init";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Loading from "../../Shared/Loading/Loading";
 
 
 const SignUp = () => {
@@ -23,8 +24,8 @@ const SignUp = () => {
         useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
     const [signInWithGoogle, googleUser, loading2, googleError] = useSignInWithGoogle(auth);
     const [signInWithGithub, githubUser, loading3, githubError] = useSignInWithGithub(auth);
-    
-
+  
+   
     const handleEmailChange = (e) => {
         const emailRegex = /\S+@\S+\.\S+/;
         const validEmail = emailRegex.test(e.target.value);

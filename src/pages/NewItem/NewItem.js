@@ -28,7 +28,7 @@ const NewItem = () => {
         <div>
             <div className='w-50 mx-auto my-4'>
                 <form className='flex flex-col mb-4' onSubmit={handleSubmit(onSubmit)}>
-                    <h2 className='mb-3'>Add new item</h2>         
+                    <h2 className='mb-3 text-center text-2xl'>Add new item</h2>         
                     <input value={user.email} className='border p-2 mb-2 ' readOnly  {...register("email")} />
                     <input placeholder='Product Name' className='border p-2 mb-2 ' {...register("name", { required: true })} />
                     <input placeholder='Photo url' className='border p-2 mb-2' {...register("picture")} />

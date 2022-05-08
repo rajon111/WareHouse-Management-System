@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import useProducts from '../Hooks/useProducts';
+import Zoom from 'react-reveal/Zoom';
 
 const ManageInventory = () => {
     const [products, setProducts] = useProducts([])
@@ -23,7 +24,10 @@ const ManageInventory = () => {
 
     return (
         <div>
+            <Zoom left>
+
             <h2 className='my-3 text-center text-3xl'>Manage inventories </h2>
+            </Zoom>
             <div className='container border-2'>
                 <table className="table ">
                     <thead>

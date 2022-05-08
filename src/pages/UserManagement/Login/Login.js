@@ -5,6 +5,7 @@ import { useSendPasswordResetEmail, useSignInWithEmailAndPassword, useSignInWith
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast} from "react-toastify";
 import auth from "../../../firebase.init";
+import Loading from '../../Shared/Loading/Loading';
 import './Login.css'
 
 const Login = () => {
@@ -27,7 +28,9 @@ const Login = () => {
     const emailRegex = /\S+@\S+\.\S+/;
     const validEmail = emailRegex.test(e.target.value);
 
-    
+  if(loading || loading2 || loading3){
+    return <Loading></Loading>
+  }  
 
   if (validEmail) {
       setUserInfo({ ...userInfo, email: e.target.value })
