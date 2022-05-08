@@ -6,7 +6,7 @@ import pic3 from '../../../../images/pic3.jpg'
 const Reviews = () => {
     return (
         <div>
-            <p className='text-4xl '>What Clients Say About  Services</p>
+            <p className='text-4xl text-center'>Our Happy Clients</p>
             <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1'>
                 <div className='flex flex-col justify-center items-center p-10'>
                     <img className='' src={pic1} alt="" />

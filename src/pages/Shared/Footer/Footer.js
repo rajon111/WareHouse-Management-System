@@ -11,7 +11,7 @@ const Footer = () => {
                     <div className="col-12 col-lg-10 mx-auto">
                         <div className="row">
                             <div className="col-6 col-lg-3">
-                                <h2 className='footer-sce-title'>Company</h2>
+                                <h2 className='footer-sce-title text-2xl text-bold'>Company</h2>
                                 <ul>
                                     <li>
                                         <a href="#">About Us</a>
@@ -29,7 +29,7 @@ const Footer = () => {
                                 </ul>
                             </div>
                             <div className="col-6 col-lg-3">
-                                <h2>Information</h2>
+                                <h2 className='text-2xl text-bold'>Information</h2>
                                 <ul>
                                     <li>
                                         <a href="#">Exchange & Return</a>
@@ -46,7 +46,7 @@ const Footer = () => {
                                 </ul>
                             </div>
                             <div className="col-6 col-lg-3">
-                                <h2>Legal</h2>
+                                <h2 className='text-2xl text-bold'> Legal</h2>
                                 <ul>
                                     <li>
                                         <a href="#">Privacy Policy</a>
@@ -66,9 +66,9 @@ const Footer = () => {
                                 <h2>Follow Us</h2>
                                 <div className="row">
                                     <div className="col-3 mx-auto">
-                                        <a href="">
-                                         
-                                        </a>
+                                        <li>Facebook</li>
+                                        <li>Youtube</li>
+                                        <li>Instagram</li>
                                     </div>
                                 </div>
                             </div>

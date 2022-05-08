@@ -29,12 +29,12 @@ const Header = () => {
                                       
                                       <Nav.Link as={Link} to="/manage">Manage Items</Nav.Link>
                                       <Nav.Link as={Link} to="/newitem">Add Item</Nav.Link>
-                                      <Nav.Link as={Link} to="/myitems">My Items</Nav.Link>
+                                      <Nav.Link as={Link}  to="/myitems">My Items</Nav.Link>
                                 </>
                             }
                             {
                                 user ? 
-                                <button onClick={()=> signOut(auth)}>log out</button>
+                                <button onClick={()=> signOut(auth)}><span className='text-white'>log out</span> </button>
                                 :
                                 <Nav.Link as={Link} to='/login'>Login</Nav.Link>
                             }
