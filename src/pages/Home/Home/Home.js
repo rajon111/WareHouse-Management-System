@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Banner from '../Banner/Banner';
 import HomeInventory from '../HomeInventory/HomeInventory';
 import Reviews from './Reviews/Reviews';
+import Services from './Services/Services';
 
 const Home = () => {
     const navigate = useNavigate()
@@ -15,6 +16,7 @@ const Home = () => {
                 <button className='btn btn-danger my-5' onClick={()=>navigate('/manage')}> Manage Inventories</button>
             </div>
             <Reviews></Reviews>
+            <Services></Services>
         </div>
     );
 };

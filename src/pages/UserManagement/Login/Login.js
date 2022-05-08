@@ -27,6 +27,8 @@ const Login = () => {
     const emailRegex = /\S+@\S+\.\S+/;
     const validEmail = emailRegex.test(e.target.value);
 
+    
+
   if (validEmail) {
       setUserInfo({ ...userInfo, email: e.target.value })
       setErrors({ ...errors, email: "" })
