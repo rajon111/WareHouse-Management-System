@@ -31,7 +31,7 @@ const ManageInventory = () => {
             <div className='container border-2'>
                 <table className="table ">
                     <thead>
-                        <tr>
+                        <tr className='grid md:grid-cols-8 sm:grid-cols-1'>
                             <th scope="col">Product Name</th>
                             <th scope="col">Photo</th>
                             <th scope="col">Description</th>
@@ -45,9 +45,9 @@ const ManageInventory = () => {
                     {
                         products.map(product =>
                             <tbody key={product._id}>
-                                <tr>
+                                <tr className='grid md:grid-cols-8 sm:grid-cols-1'>
                                     <td>{product.name}</td>
-                                    <td className='flex justify-center'><img style={{ height: '30px', width: '50px' }} src={product.picture} alt="" /> </td>
+                                    <td className='flex justify-center'><img style={{ height: '50px', width: '70px' }} src={product.picture} alt="" /> </td>
                                     <td>{product.description}</td>
                                     <td>{product.supplier}</td>
                                     <td>{product.price}</td>
