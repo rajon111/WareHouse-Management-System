@@ -1,9 +1,9 @@
 import axios from 'axios'
 import { useEffect, useState } from "react";
-import { Button, Card, Form, Container} from "react-bootstrap";
+import { Button, Card, Form, Container } from "react-bootstrap";
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword, useSignInWithGithub, useSignInWithGoogle } from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { toast} from "react-toastify";
+import { toast } from "react-toastify";
 import auth from "../../../firebase.init";
 import Loading from '../../Shared/Loading/Loading';
 import './Login.css'
@@ -28,16 +28,16 @@ const Login = () => {
     const emailRegex = /\S+@\S+\.\S+/;
     const validEmail = emailRegex.test(e.target.value);
 
-  if(loading || loading2 || loading3){
-    return <Loading></Loading>
-  }  
+    if (loading || loading2 || loading3) {
+      return <Loading></Loading>
+    }
 
-  if (validEmail) {
+    if (validEmail) {
       setUserInfo({ ...userInfo, email: e.target.value })
       setErrors({ ...errors, email: "" })
-      } else {
-          setErrors({ ...errors, email: "Invalid email" })
-          setUserInfo({ ...userInfo, email: "" })
+    } else {
+      setErrors({ ...errors, email: "Invalid email" })
+      setUserInfo({ ...userInfo, email: "" })
     }
 
   }
@@ -56,7 +56,7 @@ const Login = () => {
 
   }
 
-  const handleLogin = async(e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
 
     // console.log(userInfo)
@@ -64,21 +64,21 @@ const Login = () => {
     await signInWithEmail(userInfo.email, userInfo.password);
     const email = userInfo.email
     // eslint-disable-next-line no-undef
-    const {data}=await axios.post('http://localhost:5000/login', {email})
+    const { data } = await axios.post('https://warm-river-80956.herokuapp.com/login', { email })
     console.log(data)
-    localStorage.setItem('accessToken',data.accessToken)
-      navigate(from, { replace: true }); 
-      
+    localStorage.setItem('accessToken', data.accessToken)
+    navigate(from, { replace: true });
+
 
   }
 
   // reset password part
-  const resetPassword = async () =>{
+  const resetPassword = async () => {
     const email = userInfo.email
-    if(email){
+    if (email) {
       await sendPasswordResetEmail(email);
-            toast('Sent email');
-    }else{
+      toast('Sent email');
+    } else {
       toast('please enter your email address');
     }
   }
@@ -87,14 +87,14 @@ const Login = () => {
   const location = useLocation();
   const from = location.state?.from?.pathname || "/";
 
-  
-  useEffect(()=>{
+
+  useEffect(() => {
     if (user || googleUser || githubUser) {
       // navigate(from, { replace: true });
-  }
-  },[user,googleUser,githubUser])
- 
-// error showing part
+    }
+  }, [user, googleUser, githubUser])
+
+  // error showing part
   useEffect(() => {
     const error = hookError || googleError || githubError;
     if (error) {
@@ -145,7 +145,7 @@ const Login = () => {
             <span className='text-su'>Don't have an account?</span> <Link to='/signup'><span className='btn btn-link text-primary pe-auto text-decoration-none '> Sign Up!</span> </Link>
           </div>
           <div className="w-100 text-center mt-2">
-          <p>Forget Password? <button className='btn btn-link text-primary pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</button> </p>
+            <p>Forget Password? <button className='btn btn-link text-primary pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</button> </p>
           </div>
 
           {/* google login part */}
@@ -165,7 +165,7 @@ const Login = () => {
             <button className="btn btn-primary w-75 d-block mx-auto" onClick={() => signInWithGithub()}>
               <span className="px-4">Github</span>
             </button>
-        </div>
+          </div>
         </div>
       </Container>
 

@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react"
 
-const useProducts =()=>{
+const useProducts = () => {
     const [products, setProducts] = useState([])
     const [loading, setLoading] = useState(false)
 
-    useEffect(()=>{
-        fetch(`http://localhost:5000/inventory`)
-        .then(res => res.json())
-        .then(data => setProducts(data))
-         setLoading(!loading)
-    },[products])
+    useEffect(() => {
+        fetch(`https://warm-river-80956.herokuapp.com/inventory`)
+            .then(res => res.json())
+            .then(data => setProducts(data))
+        setLoading(!loading)
+    }, [products])
 
     return [products, setProducts]
 }

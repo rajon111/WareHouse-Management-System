@@ -8,17 +8,17 @@ const ManageInventory = () => {
     const [products, setProducts] = useProducts([])
     const navigate = useNavigate()
 
-    const handleDelete = id =>{
-        const proceed =  window.confirm('Are you sure to remove ?')
-        if(proceed){
-            const url = `http://localhost:5000/delete/${id}`
+    const handleDelete = id => {
+        const proceed = window.confirm('Are you sure to remove ?')
+        if (proceed) {
+            const url = `https://warm-river-80956.herokuapp.com/delete/${ id }`
             fetch(url, {
                 method: 'DELETE'
             })
-            .then(res => res.json())
-            .then(data =>{
-                toast('Item Deleted')
-            })
+                .then(res => res.json())
+                .then(data => {
+                    toast('Item Deleted')
+                })
         }
     }
 
@@ -26,13 +26,13 @@ const ManageInventory = () => {
         <div>
             <Zoom left>
 
-            <h2 className='my-3 text-center text-3xl'>Manage inventories </h2>
+                <h2 className='my-3 text-center text-3xl'>Manage inventories </h2>
             </Zoom>
             <div className='container border-2'>
                 <table className="table ">
                     <thead>
                         <tr>
-                        <th scope="col">Product Name</th>
+                            <th scope="col">Product Name</th>
                             <th scope="col">Photo</th>
                             <th scope="col">Description</th>
                             <th scope="col">Supplier Name</th>
@@ -43,25 +43,25 @@ const ManageInventory = () => {
                         </tr>
                     </thead>
                     {
-                        products.map(product => 
+                        products.map(product =>
                             <tbody key={product._id}>
                                 <tr>
                                     <td>{product.name}</td>
-                                    <td className='flex justify-center'><img style={{ height: '30px', width: '50px'}} src={product.picture} alt="" /> </td>
+                                    <td className='flex justify-center'><img style={{ height: '30px', width: '50px' }} src={product.picture} alt="" /> </td>
                                     <td>{product.description}</td>
                                     <td>{product.supplier}</td>
                                     <td>{product.price}</td>
                                     <td>{product.quantity}</td>
                                     <td>{product.sold}</td>
-                                    <td><button className='text-danger font-bold' onClick={() => handleDelete(`${product._id}`)} >X</button></td>
-                                </tr> 
+                                    <td><button className='text-danger font-bold' onClick={() => handleDelete(`${ product._id }`)} >X</button></td>
+                                </tr>
 
-                            </tbody>)   
+                            </tbody>)
                     }
                 </table>
             </div>
             <div className='text-center '>
-            <button className='btn btn-primary my-4' onClick={() => navigate('/newitem')} >Add New Item</button>
+                <button className='btn btn-primary my-4' onClick={() => navigate('/newitem')} >Add New Item</button>
             </div>
         </div>
     );
