@@ -36,6 +36,7 @@ const NewItem = () => {
                     <input placeholder='Supplier Name' className='border p-2 mb-2'{...register("supplier")} />
                     <input placeholder='Price' className='border p-2 mb-2'  {...register("price")} />
                     <input placeholder='Quantity' className='border p-2 mb-2' type="number" {...register("quantity")} />
+                    <input placeholder='Sold' className='border p-2 mb-2' type="number" {...register("sold")} />
                     <input className='border p-2 mb-2 btn bg-success text-white' type="submit" value='Add' />
                 </form>
             </div> 

@@ -25,7 +25,7 @@ const ManageInventory = () => {
         <div>
             <h2 className='my-3 text-center text-3xl'>Manage inventories </h2>
             <div className='container border-2'>
-                <table class="table ">
+                <table className="table ">
                     <thead>
                         <tr>
                         <th scope="col">Product Name</th>
@@ -34,12 +34,13 @@ const ManageInventory = () => {
                             <th scope="col">Supplier Name</th>
                             <th scope="col">Price</th>
                             <th scope="col">Quantity</th>
+                            <th scope="col">Sold</th>
                             <th scope="col">Delete</th>
                         </tr>
                     </thead>
                     {
                         products.map(product => 
-                            <tbody>
+                            <tbody key={product._id}>
                                 <tr>
                                     <td>{product.name}</td>
                                     <td className='flex justify-center'><img style={{ height: '30px', width: '50px'}} src={product.picture} alt="" /> </td>
@@ -47,6 +48,7 @@ const ManageInventory = () => {
                                     <td>{product.supplier}</td>
                                     <td>{product.price}</td>
                                     <td>{product.quantity}</td>
+                                    <td>{product.sold}</td>
                                     <td><button className='text-danger font-bold' onClick={() => handleDelete(`${product._id}`)} >X</button></td>
                                 </tr> 
 

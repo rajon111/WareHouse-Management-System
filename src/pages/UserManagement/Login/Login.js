@@ -1,3 +1,4 @@
+import axios from 'axios'
 import { useEffect, useState } from "react";
 import { Button, Card, Form, Container} from "react-bootstrap";
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword, useSignInWithGithub, useSignInWithGoogle } from "react-firebase-hooks/auth";
@@ -50,12 +51,19 @@ const Login = () => {
 
   }
 
-  const handleLogin = (e) => {
+  const handleLogin = async(e) => {
     e.preventDefault();
 
     // console.log(userInfo)
 
-    signInWithEmail(userInfo.email, userInfo.password);
+    await signInWithEmail(userInfo.email, userInfo.password);
+    const email = userInfo.email
+    // eslint-disable-next-line no-undef
+    const {data}=await axios.post('http://localhost:5000/login', {email})
+    console.log(data)
+    localStorage.setItem('accessToken',data.accessToken)
+      navigate(from, { replace: true }); 
+      
 
   }
 
@@ -77,7 +85,7 @@ const Login = () => {
   
   useEffect(()=>{
     if (user || googleUser || githubUser) {
-      navigate(from, { replace: true });
+      // navigate(from, { replace: true });
   }
   },[user,googleUser,githubUser])
  

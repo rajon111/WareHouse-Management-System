@@ -6,7 +6,8 @@
       "description": "Breathable upper for optimum comfort and fit.Lightweight sole to stirde with ease.",
       "price": "700",
       "quantity": "7",
-      "supplier": "techno ltd"
+      "supplier": "techno ltd",
+      "sold": "10"
     },
     {
       "index": 1,
@@ -15,7 +16,8 @@
       "description": "The KIT Collection is an infusion of traditional elements with contemporary design.",
       "price": "",
       "quantity": "15",
-      "supplier": "techno ltd"
+      "supplier": "techno ltd",
+      "sold": "15"
     },
     {
       "index": 2,
@@ -24,7 +26,8 @@
       "description": "The KIT Collection is an infusion of traditional elements with contemporary design.",
       "price": "900",
       "quantity": "15",
-      "supplier": "techno ltd"
+      "supplier": "techno ltd",
+      "sold": "10"
     },
     {
       "index": 3,
@@ -33,7 +36,8 @@
       "description": "The KIT Collection is an infusion of traditional elements with contemporary design.",
       "price": "2000",
       "quantity": "15",
-      "supplier": "techno ltd"
+      "supplier": "techno ltd",
+      "sold": "30"
     },
     {
       "index": 4,
@@ -42,16 +46,18 @@
       "description": " Stand Up Paddle Board Rope Leg Leash Light Weighted Surfboard Foot Rope Surfing Protect Accessories.",
       "price": "1500",
       "quantity": "24",
-      "supplier": "SafeSurf ltd"
+      "supplier": "SafeSurf ltd",
+      "sold": "50"
     },
     {
       "index": 5,
       "name": "Blitz Surfing Board",
-      "picture": "https://i.ibb.co/jbq2yRs/A32.jpg",
+      "picture": "https://i.ibb.co/BC1bjT4/young-basketball-player-team-wearing-sportwear-training-practicing-action-motion-run-isolated-white.jpg",
       "description": "Perfection in 12 Colors and 9 Sizes | GSM 160+ | Classic T-shirt | Ribbed collar | Oeko-tex Certified",
       "price": "600",
       "quantity": "38",
-      "supplier": "techno ltd"
+      "supplier": "techno ltd",
+      "sold": "12"
     },
     {
       "index": 6,
@@ -60,7 +66,8 @@
       "description": "These comfortable jersey shorts are made with a soft handle brushback fabric for extra comfort. With a drawcord waist for the perfect fit.",
       "price": "1200",
       "quantity": "48",
-      "supplier": "Butex ltd"
+      "supplier": "Butex ltd",
+      "sold": "13"
     },
     {
       "index": 7,
@@ -69,7 +76,8 @@
       "description": "A hoodie is a sweatshirt with a hood. Hoodies often include a muff sewn onto the lower front, and (usually) a drawstring to adjust the hood opening.",
       "price": "1200",
       "quantity": "48",
-      "supplier": "Butex ltd"
+      "supplier": "Butex ltd",
+      "sold": "17"
     }
     
 ]

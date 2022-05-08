@@ -47,7 +47,11 @@ const Blogs = () => {
                 </h2>
                 <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div className="accordion-body">
-                      
+                    NodeJS and MongoDB are two different process. 
+                    <li>NodeJS is a JavaScript runtime environment. It's actually helps JavaScript to run outside of server. It's used in server side development.</li>
+                    
+                    <li>MongoDB is NoSQL database which is document oriented. It represents data as of JSON documents. It's used for store data.</li>
+                    <li>Summary:The summary is MongoDB is a database where we can store data and NodeJS helps us to to connect our client site to database by it's server site.</li>
                     </div>
                 </div>
             </div>
