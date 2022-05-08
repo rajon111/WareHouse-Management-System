@@ -14,7 +14,7 @@ const Blogs = () => {
                     <div className="accordion-body">
                         <div className="row">
                             <div className="col-lg-6 col-sm-12 px-4 py-2">
-                                <h4 className='text-center'>Javascript</h4>
+                                <h4 className='text-center text-2xl text-cyan-700'>Javascript</h4>
                                 <hr />
                                 <li> Javascript is a programming language that is used for writing scripts on the website. </li>
                                 <li> Javascript can only be run in the browsers.</li>
@@ -24,7 +24,7 @@ const Blogs = () => {
                                 <li>Javascript is used in frontend development.</li>
                             </div>
                             <div className="col-lg-6 col-sm-12 px-4 py-2">
-                                <h4 className='text-center'>NodeJS</h4> 
+                                <h4 className='text-center text-2xl text-cyan-700'>NodeJS</h4> 
                                 <hr />
                                 <li>NodeJS is a Javascript runtime environment.</li>
                                 <li> We can run Javascript outside the browser with the help of NodeJS.</li>
@@ -58,16 +58,43 @@ const Blogs = () => {
             <div className="accordion-item">
                 <h2 className="accordion-header" id="headingOne">
                     <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        #3. What other services does firebase provide other than authentication?
+                        #3. What is the difference between sql and nosql
                     </button>
                 </h2>
                 <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div className="accordion-body">
-                        {/* <li> <strong>Firebase Database:</strong>  used to store users data like chat messages, users details and other metadata</li>
-                        <li><strong>Firebase Cloud Storage:</strong>  used to store user-generated content like the profile picture, multimedia messages, etc.</li>
-                        <li><strong>Firebase Cloud Messaging:</strong> used to send notification</li>
-                        <li><strong>Firebase Remote Config:</strong>  used to perform A/B testing on the go</li> */}
+                    <div className="row">
+                            <div className="col-lg-6 col-sm-12 px-4 py-2">
+                                <h4 className='text-center text-2xl text-cyan-700'>SQL	</h4>
+                                <hr />
+                                <li> SQL relational</li>
+                                <li>use structured query language and have a predefined schema.</li>
+                                <li>SQL are vertically scalable</li>
+                                <li>SQL are table based	</li>
+                            </div>
+                            <div className="col-lg-6 col-sm-12 px-4 py-2">
+                                <h4 className='text-center text-2xl text-cyan-700'>NoSQL</h4> 
+                                <hr />
+                                <li>non-relational</li>
+                                <li> NoSQL databases have dynamic schemas for unstructured data</li>
+                                <li>  NoSQL  are horizontally scalable.</li>
+                                <li>  NoSQL  are document, key-value,graph or wide-column stores.</li>
+                            
+                            </div>
+                        </div>
 
+                    </div>
+                </div>
+            </div>
+            <div className="accordion-item">
+                <h2 className="accordion-header" id="headingOne">
+                    <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        #4. What is the purpose of jwt and how does it work?
+                    </button>
+                </h2>
+                <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div className="accordion-body">
+                    JWT (JSON Web Token) is an open value that is used to share security information between two parties - a client and a server. Each JWT contains an encoded JSON object, which contains a set of claims. JWTs are signed using a cryptographic algorithm to ensure that claims cannot be changed after the token is issued. Unlike all other web tokens, JWT contains a set of claims. Used to transmit information between two parties to a claim. This claim depends on the use of the hand. For example, a claimant may claim who gave the token, how long it may be valid, or what permission has been granted to the client.
                     </div>
                 </div>
             </div>
